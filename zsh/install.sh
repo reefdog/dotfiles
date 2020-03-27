@@ -1,12 +1,12 @@
-echo "InStAlLiNg Oh My ZsH"
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+echo "Installing oh-my-zsh"
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
-echo "InStAlLiNg PoWeRlInE fOnTs"
+echo "Installing powerline fonts..."
 git clone https://github.com/powerline/fonts.git --depth=1
-cd fonts
+cd powerlinefonts
 ./install.sh
 cd ..
-rm -rf fonts
+rm -rf powerlinefonts
 
-echo "TuRnInG oN zSh As DeFaUlT sHeLl"
+echo "Turning on zsh as default shell..."
 chsh -s /bin/zsh

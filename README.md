@@ -15,9 +15,8 @@ will get symlinked without extension into `$HOME` when you run `script/bootstrap
 There's a few special files in the hierarchy.
 
 - **bin/**: Anything in `bin/` will get added to your `$PATH` and be made available everywhere.
-- **Brewfile**: This is a list of applications for [Homebrew Cask](https://caskroom.github.io) to
-  installm things like Chrome and 1Password and stuff. Might want to edit this file before running
-  any initial setup.
+- **Brewfile**: This is a list of applications for [Homebrew](https://brew.sh/) to install things
+  like Chrome and 1Password and stuff. Edit this file before running any initial setup.
 - **topic/\*.zsh**: Any files ending in `.zsh` get loaded into your environment.
 - **topic/path.zsh**: Any file named `path.zsh` is loaded first and is expected to setup `$PATH` or
   similar.
