@@ -26,9 +26,8 @@
         # Setting to git 2.0 default to suppress warning message
 	default = current
 [user]
-	name = Dan Schultz
-	email = slifty@gmail.com
-
+	name = Justin Reese
+	email = justin@justinreese.com
 [alias]
     cleanup = !"f() { git branch --merged ${1-master} | grep  -v '\\*\\|master\\|${1-master}$\\|develop\\|dev' | xargs -n 1 git branch -d; }; f"
     brebase = !"f() { git rebase -i `git merge-base HEAD ${1-master}`; }; f"

@@ -24,7 +24,7 @@ fail () {
 setup_gitconfig () {
   if ! [ -f git/gitconfig.local.symlink ]
   then
-    info 'setup gitconfig'
+    info 'Setup gitconfig...'
 
     git_credential='cache'
     if [ "$(uname -s)" == "Darwin" ]
@@ -45,13 +45,13 @@ setup_gitconfig () {
 }
 
 install_dotfiles () {
-  info 'installing dotfiles'
+  info 'Installing dotfiles...'
 
   local overwrite_all=false backup_all=false skip_all=false
 
   for src in $(find -H ~/.dotfiles -maxdepth 2 -name '*.symlink' -not -path '*.git*')
   do
-    echo "linking $src"
+    echo "Linking $src"
     dst="$HOME/.$(basename "${src%.*}")"
     if [ $(readlink $dst) ]
     then
@@ -62,11 +62,17 @@ install_dotfiles () {
   done
 }
 
+install_xcode_tools () {
+}
+
 setup_clone () {
   cd ~/
-  git clone https://github.com/slifty/dotfiles.git .dotfiles
+  git clone https://github.com/reefdog/dotfiles.git .dotfiles
   cd .dotfiles
 }
+
+echo "› xcode-select --install"
+xcode-select --install
 
 setup_gitconfig
 install_dotfiles
@@ -85,6 +91,4 @@ brew bundle
 find . -name install.sh | while read installer ; do sh -c "${installer}" ; done
 
 echo ''
-echo '  All installed!'
-
-
+echo 'All installed!'
