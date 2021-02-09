@@ -1,7 +1,7 @@
 # reefdog dotfiles
 
-I forked and modified this [Dan Schultz](https://github.com/slifty/dotfiles),
-who in turn started from [Zach Holman's](https://github.com/holman/dotfiles).
+I forked and modified this from [Dan Schultz](https://github.com/slifty/dotfiles), who in turn
+started from [Zach Holman's](https://github.com/holman/dotfiles).
 
 ## topical
 

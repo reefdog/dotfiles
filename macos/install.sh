@@ -10,23 +10,5 @@
 echo "› sudo softwareupdate -i -a"
 sudo softwareupdate -i -a
 
-# To look up the install ID go to the store and "copy link"
-# and pull it from the URL
-echo "Installing Mac App Store apps..."
-mas install 692867256 # Simplenote
-mas install 413965349 # Soulver 2
-mas install 585829637 # Todoist
-mas install 1225570693 # Ulysses
-
-# Manually copy from backup...
-# Tweetbot 2
-# Highland
-
-# Manually install
-# Adobe Creative Cloud
-
 # echo "Starting macOS services..."
-brew services start postgresql
-
-# echo "Installing global Bundler..."
-gem install bundler
+# brew services start postgresql

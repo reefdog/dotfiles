@@ -7,6 +7,3 @@ cd powerlinefonts
 ./install.sh
 cd ..
 rm -rf powerlinefonts
-
-echo "Turning on zsh as default shell..."
-chsh -s /bin/zsh

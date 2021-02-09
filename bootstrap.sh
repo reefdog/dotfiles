@@ -62,33 +62,21 @@ install_dotfiles () {
   done
 }
 
-install_xcode_tools () {
-}
+# echo "› xcode-select --install"
+# xcode-select --install
 
-setup_clone () {
-  cd ~/
-  git clone https://github.com/reefdog/dotfiles.git .dotfiles
-  cd .dotfiles
-}
-
-echo "› xcode-select --install"
-xcode-select --install
-
-setup_gitconfig
+# setup_gitconfig
 install_dotfiles
 
 # Run the pre-installers
-find . -name preinstall.sh | while read installer ; do sh -c "${installer}" ; done
-
-# Set this up as a git clone (it is assumed it started as a zip file)
-setup_clone
+# find . -name preinstall.sh | while read installer ; do sh -c "${installer}" ; done
 
 # Run Homebrew through the Brewfile
-echo "› brew bundle"
-brew bundle
+# echo "› brew bundle"
+# brew bundle
 
 # find the installers and run them iteratively
-find . -name install.sh | while read installer ; do sh -c "${installer}" ; done
+# find . -name install.sh | while read installer ; do sh -c "${installer}" ; done
 
 echo ''
 echo 'All installed!'
