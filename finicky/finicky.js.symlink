@@ -1,0 +1,69 @@
+// Google Profile Map:
+// - Profile 1: Personal
+// - Profile 2: FTS
+// - Profile 3: Ethan
+// - Profile 4: Burner Gmail
+
+module.exports = {
+	defaultBrowser: "Safari",
+	options: {
+		hideIcon: true,
+	},
+	rewrite: [
+		{
+			// Redirect all urls to use https
+			match: ({ url }) => url.protocol === "http",
+			url: { protocol: "https" }
+		},
+		{
+			match: "amazon.com/*",
+			url: { host: "smile.amazon.com" }
+		},
+	],
+	handlers: [
+		{
+				match: [
+					"zoom.us/*",
+					finicky.matchDomains(/.*\zoom.us/),
+					/zoom.us\/j\//,
+				],
+				browser: "us.zoom.xos"
+		},
+		{
+			match: "figma.com/file/*",
+			browser: "Figma"
+		},
+		{
+			match: [
+				"forthesilent.casebook.net/*"
+			],
+			browser: "Safari"
+		},
+		{
+			match: [
+				"github.com/*",
+				/https:\/\/.*\.zoom\.us.*/,
+				"iclassprov2.atlassian.net/*",
+				"app.clickup.com/*",
+				"xd.adobe.com/*",
+			],
+			browser: "Firefox"
+		},
+		{
+			match: [
+				"*.google.com/*"
+			],
+			browser: "Google Chrome"
+		},
+		{
+			match: [
+				"lucid.app/.*",
+				"app.lucidcharts.com/*"
+			],
+			browser: {
+				name: "Google Chrome",
+				profile: "Profile 1"
+			}
+		}
+	]
+};
