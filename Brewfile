@@ -12,6 +12,7 @@ brew "git"
 # brew "heroku/brew/heroku"
 brew "java"
 brew "jenv"
+brew "apparition47/tap/mailtrackerblocker"
 brew "mas" # Mac App Store
 brew "nvm"
 brew "openssl"
