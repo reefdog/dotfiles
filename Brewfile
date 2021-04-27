@@ -92,6 +92,7 @@ mas "Soulver 2", id: 413965349
 mas "Todoist", id: 585829637
 mas "Ulysses 2", id: 623795237
 mas "Brother iPrint&Scan", id: 1193539993
+mas "StopTheMadness", id: 1376402589
 
 
 # Fonts
