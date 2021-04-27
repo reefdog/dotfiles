@@ -94,7 +94,6 @@ mas "Ulysses 2", id: 623795237
 mas "Brother iPrint&Scan", id: 1193539993
 mas "StopTheMadness", id: 1376402589
 
-
 # Fonts
 cask "font-archivo"
 cask "font-eb-garamond"
