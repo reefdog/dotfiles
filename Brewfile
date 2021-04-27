@@ -78,7 +78,7 @@ cask "tweetbot"
 cask "visual-studio-code"
 cask "vlc"
 cask "xscope"
-cask "zoomus"
+cask "zoom"
 
 # Mac App Store apps
 mas "Ghostery Lite", id: 1436953057
