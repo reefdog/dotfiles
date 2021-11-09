@@ -36,13 +36,17 @@ brew "zsh-completions"
 # Applications
 cask "1password"
 cask "acorn"
+cask "actual"
+cask "adobe-creative-cloud"
 cask "adoptopenjdk8"
+cask "affinity-photo"
 cask "anki"
 cask "backblaze"
 cask "backblaze-downloader"
 cask "bbedit"
 cask "camo-studio"
 cask "clockify"
+cask "discord"
 cask "docker"
 cask "encryptme"
 cask "figma"
@@ -63,8 +67,10 @@ cask "retrobatch"
 cask "rstudio"
 cask "sequel-pro"
 cask "signal"
+cask "simplenote"
 cask "sizeup"
 cask "slack"
+cask "soulver2"
 cask "superduper"
 cask "spotify"
 cask "textmate"
@@ -86,11 +92,8 @@ mas "Highland 1", id: 499329572
 mas "Keynote", id: 409183694
 mas "Numbers", id: 409203825
 mas "Pages", id: 409201541
-mas "Simplenote", id: 692867256
-mas "Soulver 2", id: 413965349
 mas "Speedtest", id: 1153157709
 mas "StopTheMadness", id: 1376402589
-# mas "Todoist", id: 585829637
 mas "Ulysses 2", id: 623795237
 
 # Fonts
