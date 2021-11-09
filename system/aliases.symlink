@@ -5,3 +5,4 @@
 alias hire_minify="cd ~/Projects/hire.justinreese.com; html-minifier -c minifier.conf -o index.html index.original.html"
 alias hire_deploy="cd ~/Projects/hire.justinreese.com; hire_minify; s3_website push"
 alias hire_justin="cd ~/Projects/justinreese; bundle exec jekyll build; s3_website push"
+alias sequelize-reset="npx sequelize-cli db:drop; npx sequelize-cli db:create; npx sequelize-cli db:migrate"
