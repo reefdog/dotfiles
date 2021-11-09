@@ -1,13 +1,15 @@
 // Google Profile Map:
-// - Profile 1: Personal
+// - Default:   justin@justinreese.com
+// - Profile 1: Pine Cove
 // - Profile 2: FTS
 // - Profile 3: Ethan
-// - Profile 4: Burner Gmail
+// - Profile 4: Eserew Gmail
+// - Profile 5: Reefdog Gmail
 
 module.exports = {
 	defaultBrowser: "Safari",
 	options: {
-		hideIcon: true,
+		hideIcon: false,
 	},
 	rewrite: [
 		{
@@ -42,27 +44,37 @@ module.exports = {
 		{
 			match: [
 				"github.com/*",
+				"gitlab.com/*",
 				/https:\/\/.*\.zoom\.us.*/,
 				"iclassprov2.atlassian.net/*",
+				"icamppro.com/*",
 				"app.clickup.com/*",
 				"xd.adobe.com/*",
+				"discord.com/*",
+				"justin-news-network.local/*",
+				"jnn.local/*",
+        ""
 			],
 			browser: "Firefox"
 		},
 		{
 			match: [
-				"*.google.com/*"
+				"*.google.com/*",
+				"sites.google.com/*",
 			],
-			browser: "Google Chrome"
+			browser: {
+				name: "Google Chrome",
+				profile: "Default"
+			}
 		},
 		{
 			match: [
-				"lucid.app/.*",
+				"lucid.app/*",
 				"app.lucidcharts.com/*"
 			],
 			browser: {
 				name: "Google Chrome",
-				profile: "Profile 1"
+				profile: "Profile 1" // Pine Cove
 			}
 		}
 	]
