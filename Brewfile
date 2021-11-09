@@ -12,13 +12,13 @@ brew "git"
 # brew "heroku/brew/heroku"
 brew "java"
 brew "jenv"
-brew "apparition47/tap/mailtrackerblocker"
 brew "mas" # Mac App Store
 brew "nvm"
 brew "openssl"
-# brew "postgresql", restart_service: true
-# brew "python"
-# brew "python@2"
+brew "postgresql", restart_service: true
+brew "python"
+brew "python@2"
+brew "r"
 brew "rbenv"
 brew "rbenv-vars"
 brew "ruby-build" # rbenv installs it, but also, let's be explicit
@@ -26,7 +26,6 @@ brew "ruby-build" # rbenv installs it, but also, let's be explicit
 # brew "sass/sass/sass"
 brew "sqlite"
 brew "svn" # Necessary for fonts, apparently
-# brew "vim"
 brew "wget"
 brew "yarn"
 brew "youtube-dl"
@@ -37,14 +36,14 @@ brew "zsh-completions"
 # Applications
 cask "1password"
 cask "acorn"
+cask "adoptopenjdk8"
+cask "anki"
 cask "backblaze"
 cask "backblaze-downloader"
 cask "bbedit"
 cask "camo-studio"
-# cask "choosy"
 cask "clockify"
-cask "cloudflare-warp"
-# cask "docker"
+cask "docker"
 cask "encryptme"
 cask "figma"
 cask "finicky"
@@ -52,17 +51,16 @@ cask "firefox"
 cask "freedom"
 cask "google-chrome"
 cask "handbrake"
-# cask "iterm2"
-cask "adoptopenjdk8"
 cask "keybase"
 cask "launchbar"
+# cask "local" # For WordPress development; disable if unused
+cask "maestral" # Open-source Dropbox
 cask "netnewswire"
+cask "obsidian"
 cask "paw"
 cask "postico"
-# cask "qbserve"
-cask "quicken"
-cask "reggy"
 cask "retrobatch"
+cask "rstudio"
 cask "sequel-pro"
 cask "signal"
 cask "sizeup"
@@ -70,17 +68,18 @@ cask "slack"
 cask "superduper"
 cask "spotify"
 cask "textmate"
-cask "tower2"
+cask "the-unarchiver"
+cask "todoist"
+cask "tower"
 cask "transmit"
 cask "tweetbot"
-# cask "vagrant"
-# cask "virtualbox"
 cask "visual-studio-code"
 cask "vlc"
 cask "xscope"
 cask "zoom"
 
 # Mac App Store apps
+mas "Brother iPrint&Scan", id: 1193539993
 mas "Ghostery Lite", id: 1436953057
 mas "Hush Nag Blocker", id: 1544743900
 mas "Highland 1", id: 499329572
@@ -89,10 +88,10 @@ mas "Numbers", id: 409203825
 mas "Pages", id: 409201541
 mas "Simplenote", id: 692867256
 mas "Soulver 2", id: 413965349
-mas "Todoist", id: 585829637
-mas "Ulysses 2", id: 623795237
-mas "Brother iPrint&Scan", id: 1193539993
+mas "Speedtest", id: 1153157709
 mas "StopTheMadness", id: 1376402589
+# mas "Todoist", id: 585829637
+mas "Ulysses 2", id: 623795237
 
 # Fonts
 cask "font-archivo"
@@ -100,6 +99,7 @@ cask "font-eb-garamond"
 cask "font-glegoo"
 cask "font-im-fell-english"
 cask "font-inconsolata"
+cask "jetbrains-mono"
 cask "font-open-sans"
 cask "font-redacted"
 cask "font-roboto"
