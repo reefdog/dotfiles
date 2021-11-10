@@ -16,7 +16,6 @@
 - ~/Library/Fonts/…
   - Gotham
   - Nexa Rust
-- ~/Library/Application\ Support/Choosy/behaviours.plist
 
 ### Brewfile Questions
 
@@ -27,11 +26,9 @@
 
 - `start-redis`
 - Run Backblaze Installer
-- Copy Stickies Database
 
 ### Apps That Autoopen
 
-- Choosy
 - Zoom
 
 ### Next Steps
@@ -51,9 +48,7 @@
 
 ### Manual Installations
 
-- Final Cut Pro
 - Adobe Creative Cloud
-- Affinity suite
 
 ### Preferences
 
@@ -97,10 +92,6 @@
   - [ ] Viewing: Enable: Show most recent messages at the top
 - Music
   - [ ] Disable: Notification: When song changes
-- Choosy
-  - [ ] Enable: Enable Choosy for links
-  - [ ] Enable: Start at login
-  - [ ] Disable: Display Choosy icon in the menu bar
 - LaunchBar:
     - [ ] Disable: Show Dock Icon
 - Firefox (about:config)
