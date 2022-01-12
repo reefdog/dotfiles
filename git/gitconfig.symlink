@@ -33,3 +33,8 @@
     brebase = !"f() { git rebase -i `git merge-base HEAD ${1-master}`; }; f"
 [pull]
 	default = current
+	rebase = true
+[rebase]
+	autoSquash = true
+[init]
+	defaultBranch = main
