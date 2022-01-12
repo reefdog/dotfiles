@@ -10,15 +10,13 @@ brew "certbot"
 brew "ffmpeg"
 brew "git"
 # brew "heroku/brew/heroku"
-brew "java"
 brew "jenv"
 brew "mas" # Mac App Store
 brew "nvm"
 brew "openssl"
 brew "postgresql", restart_service: true
 brew "python"
-brew "python@2"
-brew "r"
+# brew "r" # As needed
 brew "rbenv"
 brew "rbenv-vars"
 brew "ruby-build" # rbenv installs it, but also, let's be explicit
@@ -37,8 +35,6 @@ brew "zsh-completions"
 cask "1password"
 cask "acorn"
 cask "actual"
-cask "adobe-creative-cloud"
-cask "adoptopenjdk8"
 cask "affinity-photo"
 cask "anki"
 cask "backblaze"
@@ -55,28 +51,31 @@ cask "firefox"
 cask "freedom"
 cask "google-chrome"
 cask "handbrake"
-cask "keybase"
+cask "imageoptim"
 cask "launchbar"
 # cask "local" # For WordPress development; disable if unused
 cask "maestral" # Open-source Dropbox
+cask "microsoft-edge"
 cask "netnewswire"
 cask "obsidian"
 cask "paw"
 cask "postico"
+cask "rectangle"
 cask "retrobatch"
-cask "rstudio"
+# cask "rstudio" # As needed
 cask "sequel-pro"
 cask "signal"
 cask "simplenote"
-cask "sizeup"
 cask "slack"
 cask "soulver2"
-cask "superduper"
 cask "spotify"
+cask "superduper"
+cask "temurin8" # ARM Java
 cask "textmate"
 cask "the-unarchiver"
 cask "todoist"
 cask "tower"
+cask "transmission"
 cask "transmit"
 cask "tweetbot"
 cask "visual-studio-code"
@@ -89,12 +88,9 @@ mas "Brother iPrint&Scan", id: 1193539993
 mas "Ghostery Lite", id: 1436953057
 mas "Hush Nag Blocker", id: 1544743900
 mas "Highland 1", id: 499329572
-mas "Keynote", id: 409183694
-mas "Numbers", id: 409203825
-mas "Pages", id: 409201541
-mas "Speedtest", id: 1153157709
 mas "StopTheMadness", id: 1376402589
 mas "Ulysses 2", id: 623795237
+mas "Vinegar - Tube Cleaner", id: 1591303229
 
 # Fonts
 cask "font-archivo"
@@ -102,7 +98,7 @@ cask "font-eb-garamond"
 cask "font-glegoo"
 cask "font-im-fell-english"
 cask "font-inconsolata"
-cask "jetbrains-mono"
+cask "font-jetbrains-mono"
 cask "font-open-sans"
 cask "font-redacted"
 cask "font-roboto"
