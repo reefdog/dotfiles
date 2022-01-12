@@ -24,12 +24,18 @@ module.exports = {
 	],
 	handlers: [
 		{
-				match: [
-					"zoom.us/*",
-					finicky.matchDomains(/.*\zoom.us/),
-					/zoom.us\/j\//,
-				],
-				browser: "us.zoom.xos"
+			match: [
+				"zoom.us/*",
+				finicky.matchDomains(/.*zoom.us/),
+				/zoom.us\/j\//,
+			],
+			browser: "us.zoom.xos"
+		},
+		{
+			match: [
+				"teams.microsoft.com/*"
+			],
+			browser: "Edge"
 		},
 		{
 			match: "figma.com/file/*",
