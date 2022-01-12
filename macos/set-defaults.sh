@@ -93,7 +93,7 @@ defaults write com.shiftreset.actual NSNavLastRootDirectory -string "~/Library/A
 defaults write com.knollsoft.Rectangle subsequentExecutionMode -int 2
 
 # Disable "Snap windows by dragging"
-
+defaults write com.knollsoft.Rectangle windowSnapping -int 2
 
 ###############################################################################
 # LaunchBar
