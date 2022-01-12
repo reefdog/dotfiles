@@ -17,19 +17,10 @@
   - Gotham
   - Nexa Rust
 
-### Brewfile Questions
-
-- Why did I get password-prompted between `bbedit` and `choosy`
-- Why did I get password-prompted between `xscope` and `zoomus`
-
 ### Modifications
 
 - `start-redis`
 - Run Backblaze Installer
-
-### Apps That Autoopen
-
-- Zoom
 
 ### Next Steps
 
@@ -52,27 +43,22 @@
 
 ### Preferences
 
+These preferences still need to be added to the `macos/set-defaults.sh`
+file (if possible) or performed manually (if not).
+
 - Finder:
-    - [ ] Change: New Finder windows show: ~
-    - [ ] Enable: Show these items on the desktop: +External disks
-    - [ ] Enable: Show all filename extensions
-    - [ ] Disable: Show warning before changing an extension
-    - [ ] Disable: Show warning before removing from iCloud Drive
-    - [ ] Disable: Show warning before emptying the Trash
-    - [ ] Dock: Pin to right
-    - [ ] Dock: Turn Hiding On
-    - [ ] View: Show status bar
+    - [ ] Enable showing Library in Go menu
 - System Preferences:
+  - [ ] General: Default web browser: Finicky.app
   - [ ] General: Close windows when quitting an app (disable)
   - [ ] Screen Saver: Hot corner top right command sleep display
-  - [ ] Security: require password immediately
   - [ ] Advertising: Limit Ad Tracking (enable)
   - [ ] Keyboard: Key Repeat: Fast
   - [ ] Keyboard: Delay Until Repeat: Short
-  - [ ] Keyboard: Shortcuts: Use keyboard navigation to move focus between controls
   - [ ] Spotlight: Disable "Siri Suggestions"
   - [ ] Displays: Night Shift: Schedule: Sunset to Sunrise
   - [ ] Apple ID: Disable "Optimize Mac Storage"
+  - [ ] Trackpad: Disable "Force Click and haptic feedback"
 - Safari
   - [ ] Disable: Autofill passwords/cards (use 1P instead)
   - [ ] Disable: Open safe files after downloading
@@ -81,7 +67,6 @@
 - Messages
   - [ ] Enable: "Enable Messages in iCloud"
 - Mail:
-  - [ ] Disable: Display remote images
   - [ ] Disable: Use Smart Addresses
   - [ ] Enable: View conversations: Show most recent messages to top
   - [ ] Enable: Junk mail filtering
@@ -93,12 +78,13 @@
 - Music
   - [ ] Disable: Notification: When song changes
 - LaunchBar:
-    - [ ] Disable: Show Dock Icon
+  - [ ] Open at login
 - Firefox (about:config)
   - [ ] Set `mousewheel.with_meta_action` to 1
   - [ ] Set `browser.gesture.swipe.left` to ""
   - [ ] Set `browser.gesture.swipe.right` to ""
-- SizeUp
-  - [ ] Enable: Start SizeUp Automatically at Login
-  - [ ] Disable: Show Visual Action Overlay
-  - [ ] Send Window Center: Relative to Screen Size
+- Rectangle
+  - [ ] Open at login
+  - [ ] Set preferred keyboard shortcuts
+- Calendar
+  - [ ] Change Alerts > Birthdays to on the day of event
