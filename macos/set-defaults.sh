@@ -50,6 +50,10 @@ defaults write com.apple.screensaver askForPasswordDelay -int 5
 # Enable tabbing through UI controls (system dialogs, etc.)
 defaults write NSGlobalDomain AppleKeyboardUIMode -int 3
 
+# Disable iCloud storage optimization, so that iCloud files are always available
+# locally. (Will change this manually if a machine is low on space.)
+defaults write com.apple.bird "optimize-storage" -int 0
+
 ###############################################################################
 # Safari
 ###############################################################################
