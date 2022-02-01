@@ -49,6 +49,8 @@ module.exports = {
 		},
 		{
 			match: [
+				"localhost/*",
+				"localhost:3000/*",
 				"github.com/*",
 				"gitlab.com/*",
 				/https:\/\/.*\.zoom\.us.*/,
