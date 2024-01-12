@@ -6,3 +6,4 @@ alias hire_minify="cd ~/Projects/hire.justinreese.com; html-minifier -c minifier
 alias hire_deploy="cd ~/Projects/hire.justinreese.com; hire_minify; bundle exec s3_website push"
 alias justin_deploy="cd ~/Projects/justinreese; bundle exec jekyll build; bundle exec s3_website push"
 alias sequelize-reset="npx sequelize-cli db:drop; npx sequelize-cli db:create; npx sequelize-cli db:migrate"
+alias chrome="/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome"
