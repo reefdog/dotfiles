@@ -7,6 +7,7 @@ tap "homebrew/cask-fonts"
 
 brew "awscli"
 brew "certbot"
+brew "direnv" # Auto-load .env files
 brew "ffmpeg"
 brew "git"
 # brew "heroku/brew/heroku"

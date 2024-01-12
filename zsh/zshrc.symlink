@@ -162,6 +162,9 @@ export PATH="$HOME/.jenv/bin:$PATH"
 eval "$(jenv init -)"
 eval "$(rbenv init -)"
 
+# --- Auto load .env files
+eval "$(direnv hook zsh)"
+
 # Set up NVM
 export NVM_DIR="$HOME/.nvm"
 [ -s "/usr/local/opt/nvm/nvm.sh" ] && . "/usr/local/opt/nvm/nvm.sh"  # This loads nvm
