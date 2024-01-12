@@ -26,7 +26,7 @@ brew "sqlite"
 brew "svn" # Necessary for fonts, apparently
 brew "wget"
 brew "yarn"
-brew "youtube-dl"
+brew "yt-dlp"
 brew "z"
 brew "zsh"
 brew "zsh-completions"
