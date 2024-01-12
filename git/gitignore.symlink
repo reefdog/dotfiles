@@ -3,6 +3,3 @@
 *.swp
 .sublime-workspace
 .sublime-project
-.java-version
-.nvmrc
-.ruby-version
