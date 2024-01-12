@@ -1,10 +1,17 @@
+// To find a bundle identifier for an app, run this in the terminal:
+// `mdls /Applications/AppName.app | grep kMDItemCF`
+
 // Google Profile Map:
+// Find the profile by going to `chrome://version` and looking for "Profile Path"
 // - Default:   justin@justinreese.com
-// - Profile 1: Pine Cove
-// - Profile 2: FTS
-// - Profile 3: Ethan
-// - Profile 4: Eserew Gmail
-// - Profile 5: Reefdog Gmail
+// - Profile 1: Justin/UT
+// - Profile 2: Justin/Eserew
+// - Profile 3: Justin/FTS
+// - Profile 4: Ethan
+// - Profile 5: 
+// - Profile 6: Ashton
+// - Profile 7: reefdog@gmail
+// - Profile 8: Justin/OTS
 
 module.exports = {
 	defaultBrowser: "Safari",
@@ -14,18 +21,14 @@ module.exports = {
 	rewrite: [
 		{
 			// Redirect all urls to use https
-			match: ({ url }) => url.protocol === "http",
+			match: ({ url }) => url.host !== "localhost" && url.protocol === "http",
 			url: { protocol: "https" }
-		},
-		{
-			match: "amazon.com/*",
-			url: { host: "smile.amazon.com" }
 		},
 	],
 	handlers: [
 		{
 			match: [
-				"zoom.us/*",
+				"zoom.us*",
 				finicky.matchDomains(/.*zoom.us/),
 				/zoom.us\/j\//,
 			],
@@ -33,41 +36,54 @@ module.exports = {
 		},
 		{
 			match: [
-				"teams.microsoft.com/*"
+				"teams.microsoft.com*"
 			],
 			browser: "Edge"
 		},
 		{
-			match: "figma.com/file/*",
-			browser: "Figma"
+			match: [
+				"figma.com/file*",
+				"www.figma.com/file*",
+				"figma.com/proto*",
+				"www.figma.com/proto*"
+			],
+			browser: "com.figma.Desktop"
 		},
 		{
 			match: [
-				"forthesilent.casebook.net/*"
+				"forthesilent.casebook.net*"
 			],
 			browser: "Safari"
 		},
 		{
 			match: [
-				"localhost/*",
-				"localhost:3000/*",
-				"github.com/*",
-				"gitlab.com/*",
-				/https:\/\/.*\.zoom\.us.*/,
-				"iclassprov2.atlassian.net/*",
-				"icamppro.com/*",
-				"app.clickup.com/*",
-				"xd.adobe.com/*",
-				"discord.com/*",
-				"justin-news-network.local/*",
-				"jnn.local/*",
+				"chat.opentechstrategies.com*"
+			],
+			browser: "org.zulip.zulip-electron"
+		},
+		{
+			match: [
+				"localhost*",
+				"localhost:*",
+				"github.com*",
+				"gitlab.com*",
+				"app.clickup.com*",
+				"xd.adobe.com*",
+				"discord.com*",
+				"t.co*", // Safari breaks on t.co links for some reason
+				"chat.opentechstrategies.com*",
+				"code.librehq.com*",
+				"pad.opentechstrategies.com*",
+				"wiki.opentechstrategies.com*",
+				"torque.leverforchange.org*",
+				"app.asana.com*",
 			],
 			browser: "Firefox"
 		},
 		{
 			match: [
-				"*.google.com/*",
-				"sites.google.com/*",
+				"*.google.com*",
+				"*.googleapis.com*",
 			],
 			browser: {
 				name: "Google Chrome",
@@ -76,12 +92,12 @@ module.exports = {
 		},
 		{
 			match: [
-				"lucid.app/*",
-				"app.lucidcharts.com/*"
+				"meet.jit.si*",
+				"jitsi.opentechstrategies.com*",
 			],
 			browser: {
 				name: "Google Chrome",
-				profile: "Profile 1" // Pine Cove
+				profile: "Profile 8"
 			}
 		}
 	]
