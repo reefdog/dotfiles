@@ -1,7 +1,5 @@
 cask_args appdir: "/Applications"
 
-tap "homebrew/core"
-tap "homebrew/cask"
 tap "homebrew/cask-versions"
 tap "homebrew/cask-fonts"
 
@@ -41,7 +39,6 @@ cask "anki"
 cask "backblaze"
 cask "backblaze-downloader"
 cask "bbedit"
-cask "camo-studio"
 cask "clockify"
 cask "discord"
 cask "docker"
