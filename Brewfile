@@ -1,14 +1,12 @@
 cask_args appdir: "/Applications"
 
-tap "homebrew/cask-versions"
-tap "homebrew/cask-fonts"
-
 brew "awscli"
 brew "certbot"
 brew "direnv" # Auto-load .env files
 brew "ffmpeg"
 brew "git"
 # brew "heroku/brew/heroku"
+brew "iterm2"
 brew "jenv"
 brew "mas" # Mac App Store
 brew "nvm"
@@ -33,15 +31,16 @@ brew "zsh-completions"
 # Applications
 cask "1password"
 cask "acorn"
-cask "actual"
 cask "affinity-photo"
+cask "airtable"
 cask "anki"
 cask "backblaze"
 cask "backblaze-downloader"
 cask "bbedit"
+cask "blackhole-2ch" # Expose audio output as an input
 cask "clockify"
 cask "discord"
-cask "docker"
+# cask "docker" # As needed
 cask "encryptme"
 cask "figma"
 cask "finicky"
@@ -51,23 +50,27 @@ cask "google-chrome"
 cask "handbrake"
 cask "imageoptim"
 cask "launchbar"
-# cask "local" # For WordPress development; disable if unused
+# cask "local" # WordPress development; as needed
 cask "maestral" # Open-source Dropbox
+cask "macwhisper" # Audio transcription
+cask "marathon"
+cask "marathon-2"
+cask "marathon-infinity"
 cask "microsoft-edge"
 cask "netnewswire"
 cask "obsidian"
-cask "paw"
-cask "postico"
-cask "rectangle"
-cask "retrobatch"
-# cask "rstudio" # As needed
-cask "sequel-pro"
+cask "outline-manager" # Private VPN manager
+cask "polypane" # Developmer-focused web browser
+cask "postico" # PostgreSQL database tool
+cask "rapidapi" # MySQL database tool
+cask "rectangle" # Window management
+cask "retrobatch" # Batch image processor
+cask "sequel-ace"
 cask "signal"
-cask "simplenote"
 cask "slack"
-cask "soulver2"
-cask "spotify"
-cask "superduper"
+cask "steam" # Gaming platform
+cask "swinsian" # Local music player
+cask "superduper" # Hard drive cloning
 cask "temurin8" # ARM Java
 cask "textmate"
 cask "the-unarchiver"
@@ -75,20 +78,27 @@ cask "todoist"
 cask "tower"
 cask "transmission"
 cask "transmit"
-cask "tweetbot"
 cask "visual-studio-code"
+cask "vivid" # Turbo brightness
 cask "vlc"
+cask "whatsapp"
 cask "xscope"
 cask "zoom"
 
 # Mac App Store apps
 mas "Brother iPrint&Scan", id: 1193539993
-mas "Ghostery Lite", id: 1436953057
-mas "Hush Nag Blocker", id: 1544743900
+mas "Focus", id: 1554411065 # Pomodoro timer
 mas "Highland 1", id: 499329572
-mas "StopTheMadness", id: 1376402589
+mas "Ivory", id: 6444602274 # Mastodon app
+mas "Play", id: 1596506190 # Save YouTube videos
+mas "Prime Video", id: 545519333
 mas "Ulysses 2", id: 623795237
-mas "Vinegar - Tube Cleaner", id: 1591303229
+
+# Safari plugins
+mas "Ghostery", id: 1436953057
+mas "Hush", id: 1544743900 # Stop cookie consent dialogs
+mas "StopTheMadness", id: 1376402589 # Override bad website UI
+mas "Vinegar", id: 1591303229 # HTML5-ify YouTube videos
 
 # Fonts
 cask "font-archivo"
