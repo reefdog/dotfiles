@@ -8,10 +8,12 @@
 // - Profile 2: Justin/Eserew
 // - Profile 3: Justin/FTS
 // - Profile 4: Ethan
-// - Profile 5: 
+// - Profile 5: ---
 // - Profile 6: Ashton
 // - Profile 7: reefdog@gmail
 // - Profile 8: Justin/OTS
+// - Profile 9: Justin/Hyperobjekt
+// - Profile 10: Justin/FSI
 
 module.exports = {
 	defaultBrowser: "Safari",
@@ -26,6 +28,7 @@ module.exports = {
 		},
 	],
 	handlers: [
+		// Open Zoom links in the Zoom app
 		{
 			match: [
 				"zoom.us*",
@@ -34,12 +37,15 @@ module.exports = {
 			],
 			browser: "us.zoom.xos"
 		},
+		// Open Microsoft tools in MS Edge
 		{
 			match: [
+				"https://*.sharepoint.com/*",
 				"teams.microsoft.com*"
 			],
 			browser: "Edge"
 		},
+		// Open Figma links in the Figma app
 		{
 			match: [
 				"figma.com/file*",
@@ -49,18 +55,14 @@ module.exports = {
 			],
 			browser: "com.figma.Desktop"
 		},
-		{
-			match: [
-				"forthesilent.casebook.net*"
-			],
-			browser: "Safari"
-		},
+		// Open Zulip links in the Zulip app
 		{
 			match: [
 				"chat.opentechstrategies.com*"
 			],
 			browser: "org.zulip.zulip-electron"
 		},
+		// Open development sites/tools in Firefox
 		{
 			match: [
 				"localhost*",
@@ -70,8 +72,6 @@ module.exports = {
 				"app.clickup.com*",
 				"xd.adobe.com*",
 				"discord.com*",
-				"t.co*", // Safari breaks on t.co links for some reason
-				"chat.opentechstrategies.com*",
 				"code.librehq.com*",
 				"pad.opentechstrategies.com*",
 				"wiki.opentechstrategies.com*",
@@ -80,6 +80,7 @@ module.exports = {
 			],
 			browser: "Firefox"
 		},
+		// Open Google tools in Chrome (default profile)
 		{
 			match: [
 				"*.google.com*",
@@ -90,6 +91,7 @@ module.exports = {
 				profile: "Default"
 			}
 		},
+		// Open Jitsi links in Chrome (OTS profile)
 		{
 			match: [
 				"meet.jit.si*",
