@@ -6,7 +6,6 @@ brew "direnv" # Auto-load .env files
 brew "ffmpeg"
 brew "git"
 # brew "heroku/brew/heroku"
-brew "iterm2"
 brew "jenv"
 brew "mas" # Mac App Store
 brew "nvm"
@@ -41,7 +40,6 @@ cask "blackhole-2ch" # Expose audio output as an input
 cask "clockify"
 cask "discord"
 # cask "docker" # As needed
-cask "encryptme"
 cask "figma"
 cask "finicky"
 cask "firefox"
@@ -49,6 +47,7 @@ cask "freedom"
 cask "google-chrome"
 cask "handbrake"
 cask "imageoptim"
+cask "iterm2"
 cask "launchbar"
 # cask "local" # WordPress development; as needed
 cask "maestral" # Open-source Dropbox
